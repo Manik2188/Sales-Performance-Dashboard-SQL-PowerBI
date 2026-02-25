@@ -174,5 +174,5 @@ Deploy dashboard to Power BI Service
 
 👨‍💻 Author
 
-Manik Kumar
+Satyam Kumar
 Aspiring Data Analyst | SQL | Power BI | Business Intelligence

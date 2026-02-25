@@ -1,178 +1,164 @@
 # Sales-Performance-Dashboard-SQL-PowerBI
 End-to-end Sales Data Analysis project using SQL for data extraction and transformation and Power BI for interactive dashboard creation. Includes KPI calculations, DAX measures, regional performance insights, and business recommendations.
 
-📊 Sales Performance Dashboard | SQL & Power BI
-📌 Project Overview
 
-This project focuses on analyzing regional and product-wise sales performance using SQL for data extraction and transformation and Power BI for interactive dashboard development.
+Here is your **professional, recruiter-friendly README.md** content.
+You can directly copy and paste this into GitHub.
 
-The goal of this project was to transform raw transactional data into meaningful business insights and support data-driven decision-making.
+---
 
-🎯 Project Objectives
+# 📊 Data Analytics Project | Python, SQL & Power BI
 
-Clean and transform raw sales data using SQL
+## 📌 Overview
 
-Join multiple relational tables
+This project demonstrates an end-to-end data analytics workflow — from raw data processing to interactive dashboard creation and reporting.
 
-Create calculated metrics such as Profit and Margin
+The objective was to load and analyze a dataset using **Python**, perform **Exploratory Data Analysis (EDA)**, clean and transform the data, execute analytical queries using **SQL (PostgreSQL/MySQL/SQL Server)**, and build an interactive **Power BI dashboard**.
 
-Develop KPIs using DAX in Power BI
+The final insights were summarized in a professional **report** and presentation created using **Gamma**.
 
-Build an interactive dashboard
+This project highlights practical skills in data cleaning, database querying, business intelligence, and data storytelling.
 
-Identify key business insights and performance trends
+---
 
-🗂 Dataset Description
+## 🗂 Dataset
 
-The dataset contains 25,000+ sales records with the following fields:
+The dataset used in this project contains structured business data including:
 
-Order ID
+* Transaction / Order details
+* Customer information
+* Product / Category data
+* Revenue / Sales metrics
+* Date and region attributes
 
-Order Date
+The dataset was cleaned and transformed before analysis to ensure accuracy and reliability.
 
-Region
+---
 
-Product ID
+## 🛠 Tools & Technologies
 
-Product Category
+* **Python** (Pandas, NumPy, Matplotlib, Seaborn)
+* **SQL** (PostgreSQL / MySQL / SQL Server)
+* **Power BI** (Data modeling, DAX, Dashboard creation)
+* **Gamma** (Presentation creation)
+* **Excel / CSV** (Data storage format)
 
-Customer Segment
+---
 
-Sales Amount
+## 🔄 Project Steps
 
-Quantity
+### 1️⃣ Data Loading (Python)
 
-Discount
+* Imported dataset using Pandas
+* Inspected structure, columns, and data types
+* Checked for missing and duplicate values
 
-Cost Price
+### 2️⃣ Exploratory Data Analysis (EDA)
 
-The data was structured across multiple relational tables and joined using SQL.
+* Generated summary statistics
+* Created visualizations (histograms, box plots, heatmaps)
+* Identified trends and patterns
+* Detected outliers and anomalies
 
-🛠 Work Done in SQL
-✅ Data Cleaning
+### 3️⃣ Data Cleaning
 
-Removed duplicate records
+* Handled missing values
+* Removed duplicates
+* Standardized categorical values
+* Converted data types where necessary
+* Created new calculated features
 
-Handled NULL values
+### 4️⃣ SQL Analysis
 
-Standardized date formats
+* Loaded cleaned data into PostgreSQL / MySQL / SQL Server
+* Performed JOIN operations
+* Used GROUP BY and aggregation functions
+* Created performance metrics
+* Executed advanced queries for trend and regional analysis
 
-✅ Data Transformation
+### 5️⃣ Power BI Dashboard
 
-Created calculated column for Profit
+* Imported processed data
+* Built data model (relationships & star schema)
+* Created DAX measures such as:
 
-Performed aggregations using SUM(), COUNT(), GROUP BY
+  * Total Sales
+  * Total Orders
+  * Total Profit
+  * Profit Margin
+  * Growth %
+* Designed interactive visuals with slicers and filters
 
-✅ Data Joining
+### 6️⃣ Reporting & Presentation
 
-Used INNER JOIN to combine Sales, Product, and Customer tables
+* Created detailed analytical report
+* Built a professional PPT using Gamma
+* Summarized insights and business recommendations
 
-✅ Time-Based Analysis
+---
 
-Monthly and yearly sales trend analysis
+## 📊 Dashboard Features
 
-Regional performance breakdown
+* KPI Cards (Sales, Orders, Profit, Margin)
+* Regional / Category Performance Analysis
+* Monthly Sales Trend
+* Top Performing Products
+* Customer Segment Insights
+* Interactive Filters
 
-📈 Work Done in Power BI
-🔹 Data Modeling
+The dashboard enables quick performance monitoring and business decision-making.
 
-Built Star Schema model
+---
 
-Created relationships between tables
+## 📈 Results & Insights
 
-Developed Date hierarchy (Year, Quarter, Month)
+* Identified high-performing regions and categories
+* Detected sales decline trends in specific periods
+* Analyzed impact of discounts on profitability
+* Highlighted top revenue-generating products
+* Provided data-driven recommendations for improvement
 
-🔹 KPIs Created (Using DAX)
-Total Sales = SUM(Sales[Sales_Amount])
+---
 
-Total Orders = DISTINCTCOUNT(Sales[Order_ID])
+## ▶ How to Run
 
-Total Quantity = SUM(Sales[Quantity])
+### 🔹 Python Analysis
 
-Total Profit = 
-SUMX(
-    Sales,
-    Sales[Sales_Amount] - (Sales[Cost_Price] * Sales[Quantity])
-)
+1. Clone this repository
+2. Install required libraries:
 
-Profit Margin % = 
-DIVIDE([Total Profit], [Total Sales], 0)
+   ```
+   pip install pandas numpy matplotlib seaborn
+   ```
+3. Run the Jupyter Notebook or Python script
 
-Average Order Value = 
-DIVIDE([Total Sales], [Total Orders], 0)
-📊 Dashboard Features
+### 🔹 SQL Queries
 
-KPI Cards (Total Sales, Total Orders, Total Profit, Margin %)
+1. Import dataset into PostgreSQL / MySQL / SQL Server
+2. Run the provided SQL scripts
 
-Regional Sales Bar Chart
+### 🔹 Power BI Dashboard
 
-Monthly Sales Trend Line Chart
+1. Open the `.pbix` file in Power BI Desktop
+2. Refresh the dataset connection
+3. Explore interactive visuals
 
-Category-wise Performance Chart
+---
 
-Top 10 Products Analysis
+## 🚀 Key Skills Demonstrated
 
-Customer Segment Distribution
+* Data Cleaning & Preprocessing
+* Exploratory Data Analysis
+* SQL Query Optimization
+* Data Modeling
+* DAX Calculations
+* Dashboard Design
+* Business Insight Generation
+* Data Storytelling
 
-Interactive Filters & Slicers
+---
 
-🔍 Key Insights
+## 👨‍💻 Author
 
-South region experienced post-festival sales decline
-
-Technology category generated highest revenue
-
-Corporate segment contributed highest profit
-
-High discount percentage reduced profit margin
-
-Top 20% products generated majority of total revenue
-
-💡 Business Impact
-
-This dashboard enables management to:
-
-Monitor sales performance in real time
-
-Identify underperforming regions
-
-Optimize discount strategies
-
-Improve product focus
-
-Support data-driven strategic decisions
-
-🧰 Tools & Technologies Used
-
-SQL
-
-Power BI
-
-DAX
-
-Data Modeling
-
-Business Intelligence Techniques
-
-📂 Project Structure
-Sales-Performance-Dashboard-SQL-PowerBI/
-│
-├── data/
-├── sql_queries/
-├── powerbi_dashboard.pbix
-├── Project_Report.docx
-└── README.md
-🚀 Future Improvements
-
-Add forecasting model
-
-Automate data refresh
-
-Integrate real-time database connection
-
-Deploy dashboard to Power BI Service
-
-👨‍💻 Author
-
-Satyam Kumar
-Aspiring Data Analyst | SQL | Power BI | Business Intelligence
+**Satyam Kumar**
+Aspiring Data Analyst | SQL | Python | Power BI | Business Intelligence
